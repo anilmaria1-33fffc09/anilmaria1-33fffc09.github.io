@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日大赛91-赛程追踪_每日大赛91赛果速递与热门对决解析</title>
+<meta name="description" content="每日大赛91专注追踪每日大赛91的完整赛程、实时赛果与热门对决解析，提供每日大赛91参赛指南、选手动态、数据榜单与社区讨论，适合电竞爱好者与赛事关注者收藏浏览。">
+<meta name="keywords" content="每日大赛91,每日大赛91赛程,每日大赛91赛果,每日大赛91热门对决,每日大赛91参赛指南">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f172a'/%3E%3Ctext x='32' y='42' font-size='28' font-family='sans-serif' font-weight='bold' fill='%2322d3ee' text-anchor='middle'%3E91%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+--bg:#070b14;
+--bg-soft:#0c1220;
+--card:#111a2c;
+--card2:#0f1828;
+--line:rgba(255,255,255,.08);
+--txt:#e8eefc;
+--muted:#93a1bd;
+--cyan:#22d3ee;
+--blue:#3b82f6;
+--pink:#f472b6;
+--lime:#a3e635;
+--amber:#fbbf24;
+--r:16px;
+--shadow:0 10px 30px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+font-family:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,sans-serif;
+background:
+radial-gradient(1200px 600px at 15% -10%,rgba(34,211,238,.14),transparent 60%),
+radial-gradient(900px 500px at 90% 0%,rgba(244,114,182,.10),transparent 55%),
+var(--bg);
+color:var(--txt);line-height:1.75;font-size:16px;
+-webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 18px}
+.neon{color:var(--cyan)}
+.pink{color:var(--pink)}
+.amber{color:var(--amber)}
+h1,h2,h3{line-height:1.35;font-weight:800;letter-spacing:.3px}
+h2{font-size:26px;margin-bottom:6px}
+h3{font-size:18px}
+p{color:#c6d2e8}
+.sec{padding:52px 0;border-top:1px solid var(--line)}
+.sec:first-of-type{border-top:none}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:24px;flex-wrap:wrap}
+.sec-head .sub{color:var(--muted);font-size:14px;margin-top:4px}
+.tag{display:inline-block;font-size:12px;padding:3px 10px;border-radius:999px;background:rgba(34,211,238,.12);color:var(--cyan);border:1px solid rgba(34,211,238,.3);margin-right:6px;white-space:nowrap}
+.tag.pk{background:rgba(244,114,182,.12);color:var(--pink);border-color:rgba(244,114,182,.3)}
+.tag.am{background:rgba(251,191,36,.12);color:var(--amber);border-color:rgba(251,191,36,.3)}
+.tag.lm{background:rgba(163,230,53,.12);color:var(--lime);border-color:rgba(163,230,53,.3)}
+/* ---------- nav ---------- */
+.nav{
+position:sticky;top:0;z-index:50;
+backdrop-filter:blur(14px);
+background:rgba(7,11,20,.78);
+border-bottom:1px solid var(--line);
+}
+.nav-in{display:flex;align-items:center;gap:22px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:19px;letter-spacing:.5px;white-space:nowrap}
+.logo-badge{
+width:36px;height:36px;border-radius:11px;display:grid;place-items:center;
+background:linear-gradient(135deg,#22d3ee,#3b82f6);
+color:#04111c;font-size:16px;font-weight:900;
+box-shadow:0 0 18px rgba(34,211,238,.5);
+}
+.nav-links{display:flex;gap:4px;flex-wrap:wrap;flex:1}
+.nav-links a{
+font-size:14px;color:var(--muted);padding:7px 12px;border-radius:9px;transition:.2s;
+white-space:nowrap;
+}
+.nav-links a:hover{color:var(--txt);background:rgba(255,255,255,.06)}
+.nav-cta{
+font-size:14px;font-weight:700;padding:9px 18px;border-radius:10px;
+background:linear-gradient(135deg,#22d3ee,#3b82f6);color:#04111c;white-space:nowrap;
+box-shadow:0 0 20px rgba(34,211,238,.35);
+}
+/* ---------- banner ---------- */
+.banner{padding:58px 0 46px;position:relative;overflow:hidden}
+.banner-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.banner h1{font-size:40px;margin-bottom:16px}
+.banner h1 .hl{
+background:linear-gradient(90deg,#22d3ee,#a3e635);
+-webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.banner .lead{font-size:16px;color:var(--muted);margin-bottom:10px;max-width:560px}
+.searchbar{
+display:flex;gap:10px;margin:24px 0 20px;max-width:560px;
+background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px;
+box-shadow:var(--shadow);
+}
+.searchbar input{
+flex:1;background:transparent;border:none;outline:none;color:var(--txt);
+font-size:15px;padding:8px 10px;
+}
+.searchbar input::placeholder{color:#5c6a85}
+.searchbar button{
+border:none;cursor:pointer;padding:10px 22px;border-radius:10px;font-weight:700;font-size:14px;
+background:linear-gradient(135deg,#22d3ee,#3b82f6);color:#04111c;
+}
+.quick{display:flex;flex-wrap:wrap;gap:9px}
+.quick a{
+font-size:13px;padding:8px 14px;border-radius:10px;background:var(--card2);
+border:1px solid var(--line);color:#b9c6de;transition:.2s;
+}
+.quick a:hover{border-color:rgba(34,211,238,.45);color:var(--cyan);transform:translateY(-2px)}
+.banner-visual{
+border-radius:22px;padding:22px;background:linear-gradient(160deg,#0e1a2e,#0a1322);
+border:1px solid var(--line);box-shadow:var(--shadow);position:relative;overflow:hidden;
+}
+.banner-visual::after{
+content:"";position:absolute;inset:-40% -20% auto auto;width:260px;height:260px;
+background:radial-gradient(circle,rgba(34,211,238,.28),transparent 70%);
+}
+.bv-title{font-size:13px;color:var(--muted);letter-spacing:2px;margin-bottom:14px}
+.bv-row{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px dashed rgba(255,255,255,.07);font-size:14px;position:relative;z-index:1}
+.bv-row:last-child{border-bottom:none}
+.bv-row b{font-weight:800}
+/* ---------- cards ---------- */
+.grid-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{
+background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+padding:20px;transition:.25s;box-shadow:0 4px 14px rgba(0,0,0,.25);
+}
+.card:hover{transform:translateY(-4px);border-color:rgba(34,211,238,.35);box-shadow:0 14px 34px rgba(0,0,0,.5)}
+.card h3{margin-bottom:10px;font-size:17px}
+.card p{font-size:14px;color:#a9b7d0;margin-bottom:12px}
+.meta{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:10px}
+.meta span{display:inline-flex;align-items:center;gap:4px}
+.cover{
+height:110px;border-radius:12px;margin-bottom:14px;
+background:linear-gradient(135deg,rgba(34,211,238,.25),rgba(59,130,246,.1) 60%,rgba(244,114,182,.18));
+display:grid;place-items:center;font-weight:900;font-size:22px;color:rgba(255,255,255,.85);
+letter-spacing:2px;
+}
+/* ---------- list ---------- */
+.list-up{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.up-item{
+display:flex;gap:14px;align-items:flex-start;
+background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:16px;transition:.2s;
+}
+.up-item:hover{border-color:rgba(34,211,238,.3);transform:translateX(3px)}
+.up-num{
+min-width:34px;height:34px;border-radius:9px;display:grid;place-items:center;
+background:rgba(34,211,238,.12);color:var(--cyan);font-weight:800;font-size:14px;
+}
+.up-item h4{font-size:15px;margin-bottom:4px}
+.up-item p{font-size:13px;color:var(--muted)}
+/* ---------- categories ---------- */
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.cat{
+display:flex;flex-direction:column;gap:6px;
+padding:18px;border-radius:14px;background:var(--card2);border:1px solid var(--line);
+transition:.22s;
+}
+.cat:hover{border-color:rgba(163,230,53,.4);transform:translateY(-3px)}
+.cat b{font-size:16px}
+.cat span{font-size:12.5px;color:var(--muted)}
+/* ---------- article ---------- */
+.article{
+background:var(--card);border:1px solid var(--line);border-radius:20px;padding:34px 34px 28px;
+box-shadow:var(--shadow);
+}
+.article h2{margin-bottom:18px}
+.article h3{margin:22px 0 10px;color:var(--cyan);font-size:17px}
+.article p{margin-bottom:14px;font-size:15.3px;color:#c3cfe4}
+.article .note{
+border-left:3px solid var(--pink);padding:12px 16px;background:rgba(244,114,182,.07);
+border-radius:0 10px 10px 0;font-size:14px;color:#d8c4e6;margin:16px 0;
+}
+/* ---------- guide ---------- */
+.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.guide{
+padding:20px;border-radius:14px;background:var(--card2);border:1px solid var(--line);
+}
+.guide .ico{
+width:38px;height:38px;border-radius:11px;display:grid;place-items:center;margin-bottom:12px;
+background:linear-gradient(135deg,rgba(34,211,238,.2),rgba(59,130,246,.12));color:var(--cyan);
+font-weight:800;
+}
+.guide b{display:block;margin-bottom:6px;font-size:15px}
+.guide p{font-size:13.5px;color:var(--muted)}
+/* ---------- faq ---------- */
+.faq-item{
+background:var(--card2);border:1px solid var(--line);border-radius:14px;
+padding:18px 20px;margin-bottom:12px;
+}
+.faq-item h3{font-size:15.5px;margin-bottom:8px;display:flex;gap:10px;align-items:flex-start;color:#e8eefc}
+.faq-item h3 .q{
+min-width:22px;height:22px;border-radius:7px;background:rgba(251,191,36,.15);
+color:var(--amber);display:grid;place-items:center;font-size:12px;font-weight:800;margin-top:2px;
+}
+.faq-item p{font-size:14px;color:#aebbd2}
+/* ---------- comments ---------- */
+.cmt-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.cmt{
+background:var(--card2);border:1px solid var(--line);border-radius:13px;padding:15px 17px;
+}
+.cmt-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:7px}
+.cmt-user{font-weight:700;font-size:13.5px;color:var(--cyan)}
+.cmt-time{font-size:12px;color:#64748b}
+.cmt p{font-size:13.6px;color:#b6c2d8}
+/* ---------- news ---------- */
+.news-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.news{
+background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;transition:.2s;
+}
+.news:hover{border-color:rgba(244,114,182,.35);transform:translateY(-3px)}
+.news .date{font-size:12px;color:var(--muted);margin-bottom:8px;letter-spacing:1px}
+.news h3{font-size:15.5px;margin-bottom:8px}
+.news p{font-size:13.5px;color:#a9b7d0}
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);padding:40px 0 34px;background:rgba(0,0,0,.25)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;margin-bottom:28px}
+.foot-grid h4{font-size:14px;margin-bottom:12px;color:#dbe6fa}
+.foot-grid a{display:block;font-size:13px;color:var(--muted);margin-bottom:8px;transition:.2s}
+.foot-grid a:hover{color:var(--cyan)}
+.foot-bottom{border-top:1px solid var(--line);padding-top:20px;font-size:12.5px;color:#64748b;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+/* ---------- responsive ---------- */
+@media(max-width:960px){
+.banner-grid{grid-template-columns:1fr}
+.banner h1{font-size:31px}
+.grid-cards{grid-template-columns:repeat(2,1fr)}
+.cat-grid{grid-template-columns:repeat(2,1fr)}
+.list-up{grid-template-columns:1fr}
+.guide-grid{grid-template-columns:1fr}
+.cmt-grid{grid-template-columns:1fr}
+.news-grid{grid-template-columns:1fr}
+.foot-grid{grid-template-columns:1fr 1fr}
+.nav-links{display:none}
+}
+@media(max-width:520px){
+.grid-cards{grid-template-columns:1fr}
+.cat-grid{grid-template-columns:1fr}
+.banner h1{font-size:26px}
+.article{padding:22px 18px}
+.wrap{padding:0 14px}
+.foot-grid{grid-template-columns:1fr}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ================= 导航 ================= -->
+<header class="nav">
+<div class="wrap nav-in">
+<a class="logo" href="/#top">
+<span class="logo-badge">91</span>
+<span>每日大赛<span class="neon">91</span></span>
+</a>
+<nav class="nav-links">
+<a href="/#daily">今日赛程</a>
+<a href="/#hot">热门对决</a>
+<a href="/#updates">赛果速递</a>
+<a href="/#cats">赛事分类</a>
+<a href="/#deep">深度解析</a>
+<a href="/#guide">观赛指南</a>
+<a href="/#faq">常见问题</a>
+<a href="/#cmt">社区讨论</a>
+<a href="/#news">赛事资讯</a>
+</nav>
+<a class="nav-cta" href="/#daily">查看今日赛程</a>
+</div>
+</header>
+
+<!-- ================= 首屏 Banner ================= -->
+<section class="sec banner" id="top">
+<div class="wrap banner-grid">
+<div>
+<h1>每日大赛<span class="hl">91</span>：赛程追踪与热门对决一站掌握</h1>
+<p class="lead">每日大赛91 汇集当天赛事安排、实时比分与选手状态，帮助你在碎片时间里快速了解每一场对决的看点。</p>
+<p class="lead">从赛前预测到赛后复盘，从热门榜单到社区热评，这里是你持续关注每日大赛91的稳定入口。</p>
+<form class="searchbar" onsubmit="return false;">
+<input type="text" placeholder="搜索选手、队伍、赛事场次或关键词…">
+<button type="button">搜索</button>
+</form>
+<div class="quick">
+<a href="/#daily">今日赛程</a>
+<a href="/#hot">热门对决</a>
+<a href="/#updates">赛果速递</a>
+<a href="/#cats">赛事分类</a>
+<a href="/#deep">深度解析</a>
+<a href="/#guide">观赛指南</a>
+<a href="/#faq">常见问题</a>
+<a href="/#cmt">社区讨论</a>
+<a href="/#news">赛事资讯</a>
+</div>
+</div>
+<div class="banner-visual">
+<div class="bv-title">DAILY MATCH 91 · 实时速览</div>
+<div class="bv-row"><span>今日场次</span><b class="neon">14 场</b></div>
+<div class="bv-row"><span>进行中</span><b class="amber">3 场</b></div>
+<div class="bv-row"><span>今日焦点</span><b class="pink">东部头名之争</b></div>
+<div class="bv-row"><span>最热选手</span><b>「夜航」胜率 78%</b></div>
+<div class="bv-row"><span>更新时间</span><b>2026-11-07 09:40</b></div>
+</div>
+</div>
+</section>
+
+<!-- ================= 内容简介 ================= -->
+<section class="sec" id="intro">
+<div class="wrap">
+<div class="sec-head">
+<div>
+<h2>每日大赛91 是什么？这份页面能帮你看到什么</h2>
+<div class="sub">围绕每日大赛91的赛程、赛果与内容消费需求整理</div>
+</div>
+</div>
+<div class="article">
+<p>每日大赛91 通常指代一个以“每日赛事”为核心的内容聚合场景，用户在这里关注当天有哪些比赛、谁在参赛、哪几场值得看，以及赛果出来后如何快速复盘。对很多关注者来说，搜索“每日大赛91”并不只是找一个入口，更希望在一个页面里完成“看赛程—找看点—追结果—看讨论”的连续动作。本页面正是按照这条浏览路径来组织内容，把分散的信息按赛事类型、时间线和讨论热度重新整理。</p>
+<p>页面适合的受众大致分为三类。第一类是每天固定时间浏览赛程的轻度关注者，他们更在意“今天有什么、几点开始、哪场值得看”；第二类是关注特定选手或队伍的核心观众，需要更细的对阵信息与状态数据；第三类是喜欢看赛后复盘和社区讨论的内容型用户，希望在赛果之外看到观点碰撞与战术解读。无论属于哪一类，都可以从首屏的快捷入口直接跳转到对应栏目。</p>
+<p>在内容结构上，页面提供了热门对决推荐、赛果速递、赛事分类、深度解析、观赛指南、FAQ 与社区讨论等模块。推荐卡片会标注类型标签与模拟热度，帮助你判断优先级；赛果速递以简短摘要呈现更新动态，适合快速扫读；深度解析则从对阵逻辑、选手状态、节奏变化等角度展开，适合想多了解一点的读者。页面不追求堆砌信息，而是尽量让每一块内容都有明确的阅读目的。</p>
+<p>如果你只是偶尔关注每日大赛91，建议从“今日赛程”和“热门对决”两个模块开始；如果你希望长期跟进，可以把本页加入收藏，赛果与资讯部分会按近30天的节奏持续更新。对于内容型读者，社区讨论和常见问题模块往往能补充官方信息之外的视角，也更容易发现值得回看的经典场次。</p>
+</div>
+</div>
+</section>
+
+<!-- ================= 热门内容推荐 ================= -->
+<section class="sec" id="hot">
+<div class="wrap">
+<div class="sec-head">
+<div>
+<h2>每日大赛91 热门对决推荐</h2>
+<div class="sub">按关注度与看点整理的当日推荐场次，适合优先浏览</div>
+</div>
+<a class="tag" href="/#daily">更多赛程</a>
+</div>
+<div class="grid-cards">
+
+<div class="card">
+<div class="cover">MAIN EVENT</div>
+<h3>东部头名之争：夜航 vs 赤羽</h3>
+<p>两队近期状态都在上升期，夜航的中后期决策更稳，赤羽则擅长前期压制，节奏碰撞是最大看点。</p>
+<div><span class="tag">焦点战</span><span class="tag pk">强强对话</span><span class="tag am">19:30</span></div>
+<div class="meta"><span>热度 98.6</span><span>近5场 4胜1负</span><span>解说推荐</span></div>
+</div>
+
+<div class="card">
+<div class="cover">ROOKIE WATCH</div>
+<h3>新秀挑战赛：青野 vs 拾光</h3>
+<p>本季最受关注的两位新人正面对话，青野操作上限高，拾光更偏团队型，风格差异明显。</p>
+<div><span class="tag lm">新秀</span><span class="tag">潜力对决</span><span class="tag">16:00</span></div>
+<div class="meta"><span>热度 85.2</span><span>首次交手</span><span>值得关注</span></div>
+</div>
+
+<div class="card">
+<div class="cover">REMATCH</div>
+<h3>复仇局：白鲸 vs 灰烬</h3>
+<p>上周交手中白鲸在决胜局惜败，本次再战阵容微调，灰烬能否延续压制力成为讨论焦点。</p>
+<div><span class="tag pk">复仇局</span><span class="tag am">看点足</span><span class="tag">21:00</span></div>
+<div class="meta"><span>热度 92.4</span><span>历史 2-3</span><span>恩怨对决</span></div>
+</div>
+
+<div class="card">
+<div class="cover">TACTICS</div>
+<h3>战术流对决：北辰 vs 云雀</h3>
+<p>两队都以运营和地图控制见长，比赛节奏可能偏慢，但中后期的资源交换极具观赏性。</p>
+<div><span class="tag lm">运营局</span><span class="tag">战术博弈</span><span class="tag">18:00</span></div>
+<div class="meta"><span>热度 81.7</span><span>平均时长偏长</span><span>硬核推荐</span></div>
+</div>
+
+<div class="card">
+<div class="cover">SPRINT</div>
+<h3>速攻专场：流火 vs 短笛</h3>
+<p>两支队伍都偏爱快节奏推进，前期碰撞频繁，适合喜欢高强度对抗的观众。</p>
+<div><span class="tag am">快节奏</span><span class="tag">高对抗</span><span class="tag">15:00</span></div>
+<div class="meta"><span>热度 79.3</span><span>场均击杀高</span><span>下饭首选</span></div>
+</div>
+
+<div class="card">
+<div class="cover">CLASSIC</div>
+<h3>经典重演：旧日王朝再聚首</h3>
+<p>老将组合再度同台，虽然竞技状态不如巅峰期，但配合默契与临场经验仍是最大卖点。</p>
+<div><span class="tag pk">情怀局</span><span class="tag">老将</span><span class="tag am">20:00</span></div>
+<div class="meta"><span>热度 88.1</span><span>观众期待高</span><span>慢热型</span></div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ================= 最新更新 / 赛果速递 ================= -->
+<section class="sec" id="updates">
+<div class="wrap">
+<div class="sec-head">
+<div>
+<h2>每日大赛91 赛果速递与最新动态</h2>
+<div class="sub">以下动态整理自近期公开讨论与赛程变化，时间截至2026年11月7日</div>
+</div>
+<a class="tag lm" href="/#news">更多资讯</a>
+</div>
+<div class="list-up">
+
+<div class="up-item">
+<div class="up-num">01</div>
+<div><h4>夜航 2:1 赤羽</h4><p>决胜局夜航在资源落后情况下完成翻盘，赛后讨论集中在最后一波团战决策。</p></div>
+</div>
+<div class="up-item">
+<div class="up-num">02</div>
+<div><h4>青野晋级下一轮</h4><p>新秀挑战赛首日，青野以稳定发挥拿下两连胜，拾光进入败者组。</p></div>
+</div>
+<div class="up-item">
+<div class="up-num">03</div>
+<div><h4>白鲸阵容微调</h4><p>赛前公布的新阵容中，辅助位轮换引发讨论，教练组表示是为针对灰烬做准备。</p></div>
+</div>
+<div class="up-item">
+<div class="up-num">04</div>
+<div><h4>北辰地图池更新</h4><p>近期训练中北辰明显增加了新地图的使用比例，战术体系可能有所调整。</p></div>
+</div>
+<div class="up-item">
+<div class="up-num">05</div>
+<div><h4>流火今晚提前开赛</h4><p>由于场地安排调整，流火对阵短笛的比赛提前至15:00，观众需留意时间变化。</p></div>
+</div>
+<div class="up-item">
+<div class="up-num">06</div>
+<div><h4>老将组合确认参赛</h4><p>经典重演场次名单确认，两位老将均会出场，具体分工尚未公布。</p></div>
+</div>
+<div class="up-item">
+<div class="up-num">07</div>
+<div><h4>灰烬近五场数据</h4><p>灰烬近五场场均推进效率排名前列，但后期失误率有上升趋势。</p></div>
+</div>
+<div class="up-item">
+<div class="up-num">08</div>
+<div><h4>每日大赛91 讨论热度上升</h4><p>随着焦点战临近，社区中关于对阵预测的帖子明显增多，投票参与人数持续上涨。</p></div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ================= 分类入口 ================= -->
+<section class="sec" id="cats">
+<div class="wrap">
+<div class="sec-head">
+<div>
+<h2>每日大赛91 赛事分类入口</h2>
+<div class="sub">按类型与关注方向快速筛选，减少无效浏览</div>
+</div>
+</div>
+<div class="cat-grid">
+<a class="cat" href="/#hot"><b>焦点对决</b><span>关注度最高的当日场次</span></a>
+<a class="cat" href="/#updates"><b>赛果速递</b><span>比分与关键节点更新</span></a>
+<a class="cat" href="/#deep"><b>深度解析</b><span>战术、状态与对阵逻辑</span></a>
+<a class="cat" href="/#guide"><b>观赛指南</b><span>时间安排与观看建议</span></a>
+<a class="cat" href="/#news"><b>赛事资讯</b><span>阵容变化与场外动态</span></a>
+<a class="cat" href="/#cmt"><b>社区讨论</b><span>观点碰撞与热评精选</span></a>
+<a class="cat" href="/#faq"><b>常见问题</b><span>新观众最容易遇到的疑问</span></a>
+<a class="cat" href="/#daily"><b>今日赛程</b><span>按时间线整理的对阵列表</span></a>
+</div>
+</div>
+</section>
+
+<!-- ================= 深度解析正文 ================= -->
+<section class="sec" id="deep">
+<div class="wrap">
+<div class="sec-head">
+<div>
+<h2>每日大赛91 深度解析：为什么这些对决值得看</h2>
+<div class="sub">从对阵结构、选手状态与节奏变化展开的编辑观察</div>
+</div>
+</div>
+<div class="article">
+<p>关注每日大赛91 的用户，往往不满足于只看一个比分。比分背后通常有更具体的问题：这场比赛为什么在这个时间点发生、双方近期状态差异在哪里、哪一方的战术更容易奏效。把这些信息拆开来看，才能理解为什么有些场次被标为“焦点”，而有些场次更适合当作背景内容浏览。焦点战之所以受关注，通常是因为双方实力接近、历史交手有话题，或者近期状态出现明显变化，而不是单纯因为名字更响。</p>
+<h3>对阵结构与节奏差异</h3>
+<p>从近期的每日大赛91 赛程看，比赛类型大致可以分为强强对话、新秀交手、复仇局和战术运营局几类。强强对话的看点在于双方都能针对对方做出调整，比赛往往会拖入中后期，考验临场决策；新秀交手节奏更不稳定，失误与高光并存，观赏性反而可能更高；复仇局则自带情绪线，观众会特别关注上次失利的一方是否找到解决办法。战术运营局在观感上可能不够炸裂，但对喜欢研究资源交换和地图控制的观众来说，信息密度更大。</p>
+<h3>选手状态与内容消费体验</h3>
+<p>页面中出现的选手或队伍标签，主要帮助读者建立“谁近期状态好、谁更擅长快节奏、谁更依赖后期”的直观印象。以“夜航”为例，近期胜率与关键局表现都更稳定，因此在推荐中会被放在更靠前的位置；而像“流火”这类偏爱快攻的队伍，则更适合喜欢高强度对抗的观众。需要说明的是，这些标签是为了方便浏览而做的归纳，并非绝对判断，实际比赛仍会受到临场发挥、阵容调整等因素影响。</p>
+<p>从内容消费角度看，每日大赛91 的价值在于把“看比赛”拆成可选择的几个层次：只看结果、看关键节点、看完整复盘、看社区观点。页面结构也是按这个逻辑排列的，先给热门推荐和赛果速递，再进入深度解析和讨论。这样即使只有几分钟，也能快速获取核心信息；如果有更多时间，则可以继续往下读，补充背景和细节。</p>
+<h3>适合人群与同类比较</h3>
+<p>如果你属于轻度关注者，建议重点关注速递和热门推荐，不必每场都追；如果你有固定支持的选手或队伍，可以结合分类入口和资讯模块跟进动态；如果你喜欢分析型内容，深度解析和社区讨论会更符合需求。与单一结果页相比，这类聚合页的优势在于把赛程、结果、观点和常见问题放在同一条浏览路径上，减少来回跳转。搜索“每日大赛91”的人，多数也是希望用更少时间获得更完整的信息，这正是页面设计的出发点。</p>
+<div class="note">编辑提示：赛程与结果会随实际情况变化，页面中的时间与数据为内容演示用途，建议以官方公布信息为准。</div>
+</div>
+</div>
+</section>
+
+<!-- ================= 体验指南 ================= -->
+<section class="sec" id="guide">
+<div class="wrap">
+<div class="sec-head">
+<div>
+<h2>每日大赛91 观赛与内容消费指南</h2>
+<div class="sub">让浏览更顺手的几个使用建议</div>
+</div>
+</div>
+<div class="guide-grid">
+<div class="guide">
+<div class="ico">01</div>
+<b>先看时间线，再做选择</b>
+<p>如果时间有限，先浏览今日赛程模块，按开赛时间排序，挑出与自身空闲时间匹配的场次。</p>
+</div>
+<div class="guide">
+<div class="ico">02</div>
+<b>善用标签筛选关注点</b>
+<p>标签中的“焦点战”“新秀”“运营局”等可以帮助快速判断比赛风格，不必逐场阅读摘要。</p>
+</div>
+<div class="guide">
+<div class="ico">03</div>
+<b>移动端阅读更直接</b>
+<p>页面在手机端会自动收拢导航与卡片布局，适合通勤或碎片时间快速浏览赛果与热评。</p>
+</div>
+<div class="guide">
+<div class="ico">04</div>
+<b>收藏页面方便追更</b>
+<p>赛果速递与资讯模块会持续更新，收藏后可以从导航快速回到对应栏目，减少重复搜索。</p>
+</div>
+<div class="guide">
+<div class="ico">05</div>
+<b>用推荐扩展浏览路径</b>
+<p>热门推荐与社区讨论往往能带出你没注意到的场次，适合在主要目标读完后继续浏览。</p>
+</div>
+<div class="guide">
+<div class="ico">06</div>
+<b>把 FAQ 当作补充说明</b>
+<p>常见问题中整理了新观众容易遇到的困惑，包括时间安排、赛制理解和关注重点等。</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec" id="faq">
+<div class="wrap">
+<div class="sec-head">
+<div>
+<h2>每日大赛91 常见问题</h2>
+<div class="sub">围绕赛程、观看顺序与内容选择的问答整理</div>
+</div>
+</div>
+
+<div class="faq-item">
+<h3><span class="q">Q</span>每日大赛91 的赛程一般什么时候更新？</h3>
+<p>赛程通常会在比赛日前一天或当天上午更新，页面中的“今日赛程”与“赛果速递”模块会优先反映近期变化。如果遇到场地或时间调整，资讯模块也会补充说明。建议在计划观看前再次确认时间，避免因临时变动错过场次。</p>
+</div>
+<div class="faq-item">
+<h3><span class="q">Q</span>第一次关注每日大赛91，应该先看哪些内容？</h3>
+<p>建议先看首屏的热门推荐和今日赛程，了解当天有哪些值得关注的场次；接着浏览赛果速递，快速掌握近期结果；如果对某场对决感兴趣，再进入深度解析查看背景。这样可以在较短时间内建立整体印象，不必一开始就阅读大量分析内容。</p>
+</div>
+<div class="faq-item">
+<h3><span class="q">Q</span>热门对决和普通场次有什么区别？</h3>
+<p>热门对决通常指关注度更高、对阵双方实力接近或存在历史话题的场次，推荐卡片中会标注“焦点战”“复仇局”等标签。普通场次并非不值得看，而是更适合作为背景内容或按个人偏好选择。分类入口可以帮助你按兴趣筛选，而不是只跟随热度。</p>
+</div>
+<div class="faq-item">
+<h3><span class="q">Q</span>页面中的数据和标签是否代表最终结果？</h3>
+<p>页面中的热度、胜率、时间等属于内容整理与演示性质，用于帮助读者理解浏览重点，并不构成对比赛结果的预测或保证。实际赛果会受到临场发挥、阵容调整等多种因素影响，建议结合官方信息与个人判断理性观看。</p>
+</div>
+<div class="faq-item">
+<h3><span class="q">Q</span>喜欢看战术分析，应该从哪个模块开始？</h3>
+<p>可以从深度解析模块开始，重点看对阵结构与节奏差异部分；随后结合社区讨论中的观点，了解不同观众对同一场比赛的理解。如果对某支队伍或选手特别感兴趣，再通过分类入口查找相关场次和资讯，形成更完整的阅读路径。</p>
+</div>
+<div class="faq-item">
+<h3><span class="q">Q</span>每日大赛91 相关资讯多久看一次比较合适？</h3>
+<p>如果只是轻度关注，每天浏览一次赛果速递即可；如果关注特定队伍或选手，建议在比赛日前和赛后各看一次资讯模块，前者用于确认阵容与时间，后者用于补充赛后动态。资讯内容以简短摘要为主，适合快速扫读。</p>
+</div>
+
+</div>
+</section>
+
+<!-- ================= 社区讨论 ================= -->
+<section class="sec" id="cmt">
+<div class="wrap">
+<div class="sec-head">
+<div>
+<h2>每日大赛91 社区讨论精选</h2>
+<div class="sub">来自近30天的用户短评与观点摘录，语气与立场保持多样</div>
+</div>
+</div>
+<div class="cmt-grid">
+
+<div class="cmt"><div class="cmt-top"><span class="cmt-user">夜航的小跟班</span><span class="cmt-time">2026-11-06</span></div><p>夜航最近状态是真的稳，决胜局处理比上个月成熟不少，期待今晚继续。</p></div>
+<div class="cmt"><div class="cmt-top"><span class="cmt-user">赤羽不哭</span><span class="cmt-time">2026-11-06</span></div><p>赤羽前期还是猛，就是中后期容易急，这场如果能稳住心态其实有机会。</p></div>
+<div class="cmt"><div class="cmt-top"><span class="cmt-user">青野观察员</span><span class="cmt-time">2026-11-05</span></div><p>新秀里青野的操作确实亮眼，但拾光的团战思路更清楚，谁赢真不好说。</p></div>
+<div class="cmt"><div class="cmt-top"><span class="cmt-user">白鲸冲冲冲</span><span class="cmt-time">2026-11-05</span></div><p>复仇局来了，上次输得太可惜，这次阵容调整希望有效果。</p></div>
+<div class="cmt"><div class="cmt-top"><span class="cmt-user">灰烬后援团</span><span class="cmt-time">2026-11-04</span></div><p>灰烬近五场数据不错，但后期失误确实多了点，看今晚怎么调整。</p></div>
+<div class="cmt"><div class="cmt-top"><span class="cmt-user">战术板老张</span><span class="cmt-time">2026-11-03</span></div><p>北辰和云雀这场适合慢慢看，资源交换的细节比比分有意思。</p></div>
+<div class="cmt"><div class="cmt-top"><span class="cmt-user">流火快攻粉</span><span class="cmt-time">2026-11-03</span></div><p>提前到三点有点难受，不过快节奏比赛看着爽，尽量赶。</p></div>
+<div class="cmt"><div class="cmt-top"><span class="cmt-user">短笛不短</span><span class="cmt-time">2026-11-02</span></div><p>流火前期确实猛，但短笛如果能拖住，后面未必没机会。</p></div>
+<div class="cmt"><div class="cmt-top"><span class="cmt-user">旧日情怀党</span><span class="cmt-time">2026-11-01</span></div><p>老将再聚首看一场少一场，输赢反而没那么重要了。</p></div>
+<div class="cmt"><div class="cmt-top"><span class="cmt-user">中立观众阿七</span><span class="cmt-time">2026-10-31</span></div><p>每日大赛91 的赛程整理得挺清楚，至少不用到处找时间表了。</p></div>
+<div class="cmt"><div class="cmt-top"><span class="cmt-user">云雀信徒</span><span class="cmt-time">2026-10-30</span></div><p>云雀最近地图池有点单一，希望这场能拿出点新东西。</p></div>
+<div class="cmt"><div class="cmt-top"><span class="cmt-user">拾光捡漏王</span><span class="cmt-time">2026-10-29</span></div><p>拾光打败者组未必是坏事，多打几场手感也许更好。</p></div>
+<div class="cmt"><div class="cmt-top"><span class="cmt-user">只看结果的人</span><span class="cmt-time">2026-10-28</span></div><p>速递模块挺方便，早上扫一眼就知道昨晚谁赢了。</p></div>
+<div class="cmt"><div class="cmt-top"><span class="cmt-user">数据流小周</span><span class="cmt-time">2026-10-27</span></div><p>热度归热度，还是得看临场，数据只能参考。</p></div>
+<div class="cmt"><div class="cmt-top"><span class="cmt-user">晚上八点档</span><span class="cmt-time">2026-10-26</span></div><p>希望焦点战别打得太保守，观众就是想看对攻。</p></div>
+<div class="cmt"><div class="cmt-top"><span class="cmt-user">路过看个热闹</span><span class="cmt-time">2026-10-25</span></div><p>不是每场都追，但每日大赛91 的推荐确实省时间。</p></div>
+
+</div>
+</div>
+</section>
+
+<!-- ================= 相关资讯 ================= -->
+<section class="sec" id="news">
+<div class="wrap">
+<div class="sec-head">
+<div>
+<h2>每日大赛91 相关资讯</h2>
+<div class="sub">阵容、时间与社区动态的简要汇总</div>
+</div>
+</div>
+<div class="news-grid">
+
+<div class="news">
+<div class="date">2026-11-07</div>
+<h3>焦点战阵容确认，夜航与赤羽均无替补调整</h3>
+<p>双方公布的首发名单与上一场一致，夜航继续沿用近期稳定组合，赤羽则保持前期压制思路。</p>
+</div>
+<div class="news">
+<div class="date">2026-11-06</div>
+<h3>新秀挑战赛赛制说明补充，败者组仍有晋级机会</h3>
+<p>官方补充了败者组的晋级路径，拾光进入败者组后仍可通过后续比赛争夺名额。</p>
+</div>
+<div class="news">
+<div class="date">2026-11-05</div>
+<h3>白鲸教练组回应阵容轮换：针对灰烬做针对性准备</h3>
+<p>白鲸在赛前采访中表示，辅助位轮换是为了应对灰烬的前期节奏，具体效果有待比赛检验。</p>
+</div>
+<div class="news">
+<div class="date">2026-11-04</div>
+<h3>北辰训练赛使用新地图，战术体系或迎调整</h3>
+<p>近期训练记录显示北辰增加了新地图比例，分析认为可能与后续赛程的地图池变化有关。</p>
+</div>
+<div class="news">
+<div class="date">2026-11-03</div>
+<h3>流火对阵短笛提前至15点开赛，观众需留意时间</h3>
+<p>场地安排调整导致开赛时间提前，流火方面表示已做好相应准备，不影响正常参赛。</p>
+</div>
+<div class="news">
+<div class="date">2026-11-02</div>
+<h3>经典重演场次名单公布，两位老将确认同台</h3>
+<p>老将组合将再次同台，具体位置分工尚未公开，社区讨论热度持续上升。</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ================= 今日赛程（补充栏目） ================= -->
+<section class="sec" id="daily">
+<div class="wrap">
+<div class="sec-head">
+<div>
+<h2>每日大赛91 今日赛程速览</h2>
+<div class="sub">按时间排序的当日对阵，便于快速安排观看</div>
+</div>
+</div>
+<div class="list-up">
+<div class="up-item"><div class="up-num">15:00</div><div><h4>流火 vs 短笛</h4><p>速攻专场，前期碰撞频繁，适合喜欢高强度节奏的观众。</p></div></div>
+<div class="up-item"><div class="up-num">16:00</div><div><h4>青野 vs 拾光</h4><p>新秀挑战赛正面对话，操作流与团队流的风格碰撞。</p></div></div>
+<div class="up-item"><div class="up-num">18:00</div><div><h4>北辰 vs 云雀</h4><p>战术运营局，资源交换与地图控制是主要看点。</p></div></div>
+<div class="up-item"><div class="up-num">19:30</div><div><h4>夜航 vs 赤羽</h4><p>东部头名之争，双方近期状态都在上升期。</p></div></div>
+<div class="up-item"><div class="up-num">20:00</div><div><h4>旧日王朝再聚首</h4><p>经典重演场次，老将组合的配合与经验是最大卖点。</p></div></div>
+<div class="up-item"><div class="up-num">21:00</div><div><h4>白鲸 vs 灰烬</h4><p>复仇局再战，白鲸阵容微调后的效果值得关注。</p></div></div>
+</div>
+</div>
+</section>
+
+<!-- ================= 页脚 ================= -->
+<footer>
+<div class="wrap">
+<div class="foot-grid">
+<div>
+<h4>每日大赛91</h4>
+<p style="font-size:13px;color:var(--muted);margin-bottom:10px;">围绕每日大赛91的赛程、赛果与社区讨论整理的内容聚合页，适合关注赛事动态的读者浏览与收藏。</p>
+</div>
+<div>
+<h4>栏目导航</h4>
+<a href="/#daily">今日赛程</a>
+<a href="/#hot">热门对决</a>
+<a href="/#updates">赛果速递</a>
+<a href="/#cats">赛事分类</a>
+</div>
+<div>
+<h4>延伸阅读</h4>
+<a href="/#deep">深度解析</a>
+<a href="/#guide">观赛指南</a>
+<a href="/#faq">常见问题</a>
+<a href="/#news">赛事资讯</a>
+</div>
+<div>
+<h4>友情链接</h4>
+<a href="/#top">站点首页</a>
+<a href="/#cmt">社区讨论</a>
+<a href="/#intro">内容简介</a>
+<a href="/#top">返回顶部</a>
+</div>
+</div>
+<div class="foot-bottom">
+<span>© 2026 每日大赛91 内容聚合页 · 本站为静态演示页面，赛程与数据仅供内容参考。</span>
+<span>友情链接占位位 · 欢迎交换</span>
+</div>
+</div>
+</footer>
+
+</body>
+  </html>
